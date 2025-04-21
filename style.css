@@ -253,33 +253,36 @@ button {
 @media (max-width: 768px) {
     body {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px; /* Reduce padding for smaller screens */
         height: auto; /* Allow scrolling on smaller screens */
+        justify-content: flex-start; /* Align content to the top */
     }
 
     form {
         width: 100%; /* Take full width on smaller screens */
         max-width: 100%; /* Remove max-width restriction */
-        padding: 15px; /* Reduce padding for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+        box-shadow: none; /* Remove shadow for a cleaner look */
+        border: 1px solid #ddd; /* Add a subtle border for better visibility */
     }
 
     h2 {
-        font-size: 20px; /* Adjust heading size */
-        margin-bottom: 15px;
+        font-size: 18px; /* Adjust heading size for smaller screens */
+        margin-top: 10px; /* Add some space from the top */
+        margin-bottom: 10px; /* Reduce bottom margin */
+        text-align: center; /* Ensure heading is centered */
     }
 
     input, textarea {
         font-size: 14px; /* Adjust font size for inputs */
         padding: 8px; /* Reduce padding for smaller screens */
+        margin-bottom: 10px; /* Reduce spacing between inputs */
     }
 
     button {
         font-size: 14px; /* Adjust button font size */
-        padding: 8px; /* Reduce button padding */
+        padding: 10px; /* Ensure buttons are easy to tap */
+        margin-top: 10px; /* Add spacing above the button */
     }
-}
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    height: 100vh;
 }
 
